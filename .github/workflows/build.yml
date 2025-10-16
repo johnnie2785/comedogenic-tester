@@ -22,7 +22,7 @@ jobs:
 
       - name: Build executable
         run: |
-          pyinstaller --onefile --noconsole --add-data "comedogenic_db.xlsx;." comedogenic_tester_gui.py
+          pyinstaller --onefile --noconsole --add-data "comprehensive_comedogenic_db_1000.xlsx;." comedogenic_tester_gui.py
 
       - name: Upload EXE artifact
         uses: actions/upload-artifact@v4
